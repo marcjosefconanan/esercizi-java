@@ -35,7 +35,7 @@ public class essercizio17 {
                 break;
                 
             default:
-                aError();
+                aErrore();
         }
     }
 
@@ -67,7 +67,7 @@ public class essercizio17 {
         System.out.println("è domenica");
     }
 
-    public static void aError() {
+    public static void aErrore() {
         System.out.println("Errore");
     }
 }
