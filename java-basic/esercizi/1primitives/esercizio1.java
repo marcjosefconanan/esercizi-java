@@ -2,7 +2,7 @@
 
 //AREA DEL TRIANGOLO
 
-public class exercise1 {
+public class esercizio1 {
     public static void main(String[] args) {
         double a = 2.5;
         double b = 6;

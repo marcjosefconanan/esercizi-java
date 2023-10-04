@@ -1,29 +1,51 @@
 //Scrivere un programma che contenga un metodo che permetta di rimuovere gli elementi duplicati in un array di interi.
 // L'array ottenuto dovrà essere stampato a video.
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-public class Esercizio26 {
+public class esercizio26 {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 9, 9};
 
+        // rimuove i duplicati
         int[] risultato = rimuoviDuplicati(array);
 
-        System.out.println(Arrays.toString(risultato));
+        System.out.println(java.util.Arrays.toString(risultato));
     }
 
     public static int[] rimuoviDuplicati(int[] array) {
-        ArrayList<Integer> unici = new ArrayList<>();
-        for (int elemento : array) {
-            if (!unici.contains(elemento)) {
-                unici.add(elemento);
+        int lunghezzaArraySenzaDuplicati = 0;
+
+        // Conta quanti elementi non duplicati ci sono nel array
+        for (int i = 0; i < array.length; i++) {
+            boolean duplicato = false;
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] == array[j]) {
+                    duplicato = true;
+                    break;
+                }
+            }
+            if (!duplicato) {
+                lunghezzaArraySenzaDuplicati++;
             }
         }
+        // Ctrl c + ctrl p codice di sopra haha
 
-        int[] risultato = new int[unici.size()];
-        for (int i = 0; i < unici.size(); i++) {
-            risultato[i] = unici.get(i);
+        // nuovo array senza duplicati
+        int[] risultato = new int[lunghezzaArraySenzaDuplicati];
+        int indiceRisultato = 0;
+
+        // Copia  elementi non duplicati
+        for (int i = 0; i < array.length; i++) {
+            boolean duplicato = false;
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] == array[j]) {
+                    duplicato = true;
+                    break;
+                }
+            }
+            if (!duplicato) {
+                risultato[indiceRisultato] = array[i];
+                indiceRisultato++;
+            }
         }
 
         return risultato;

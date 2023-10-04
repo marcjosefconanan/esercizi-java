@@ -1,6 +1,6 @@
 //Dati due caratteri, restituire la somma dei loro valori ASCII
 
-public class exercise4 {
+public class esercizio4 {
     public static void main(String[] args) {
         char a = 'A'; 
         char b = 'B'; 

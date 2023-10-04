@@ -6,12 +6,12 @@ public class esercizio7 {
         int a = 10;
         int b = 2;
 
-        System.out.printIn(" a = " + a);
-        System.out.printIn(" b = " + b);
+        System.out.println(" a = " + a);
+        System.out.println(" b = " + b);
 
         int resault = a / b ; 
 
-        System.out.printIn("this is the sum of " + resault)
+        System.out.println("this is the sum of " + resault);
     }
 }
 

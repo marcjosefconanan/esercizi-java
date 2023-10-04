@@ -1,9 +1,9 @@
 //Scrivi un programma che contenga un metodo che prende in ingresso un valore numerico e restituisca 
 //la tabellina aritmetica di quel numero che dovrà essere stampata a video.
 
-public class Esercizio20 {
+public class esercizio20 {
     public static void main(String[] args) {
-        int a = 5; 
+        int a = 5;
         Tabella(a);
     }
 

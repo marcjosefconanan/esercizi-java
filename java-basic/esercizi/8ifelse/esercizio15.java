@@ -2,7 +2,7 @@
 //"Fizz" al posto del numero e per i multipli di 5 stampi "Buzz".
 //Nel caso in cui un numero sia multiplo di entrambi stampi "FizzBuzz".
 
-public class esercizo15 {
+public class esercizio15 {
     public static void main(String[] args) {
         stampa(1, 100);
     }

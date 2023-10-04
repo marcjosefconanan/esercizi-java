@@ -1,6 +1,6 @@
 //Definire una funzione che accetti in ingresso 2 interi e ne restituisca la somma.
 
-public class exercise5 {
+public class esercizio5 {
 
     public static void main(String args[]) {
     int a = 10;

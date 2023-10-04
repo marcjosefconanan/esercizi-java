@@ -4,7 +4,7 @@
 //Nel caso non riesca ad identificare il tipo di operazione dovrà restituire una stringa di errore.
 
 
-public class Esercizio18 {
+public class esercizio18 {
     public static void main(String[] args) {
         char a = '*'; 
 

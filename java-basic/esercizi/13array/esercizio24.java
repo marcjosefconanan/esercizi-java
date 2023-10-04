@@ -10,23 +10,28 @@ public class esercizio24 {
         System.out.println("La somma degli elementi dell'array è: " + somma);
     }
 
-    public static int[] creaArray() {
-        int[] array = new int[10];
+    public static int[] creaArray() { // funzione del array
+        int[] array = new int[10]; // nuovo array di 10 elementi
 
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) { // for loop
+        // i = 0; se i e minore della lunghezza di array; i = i + 1.
+
             array[i] = i + 1;
+            //prende il elemento i e assegna il valeìore i + 1 iniziando da 0. 
         }
 
-        return array;
+        return array; // fatto tutto questo restituisci il valore di "array"
     }
 
-    public static int calcolaSomma(int[] array) {
-        int somma = 0;
+    public static int calcolaSomma(int[] array) { //calcola la somma degli elementi di un array.
+        int somma = 0; //accumula la somma elementi array 
 
-        for (int valore : array) {
-            somma += valore;
+        for (int valore : array) { // for each 
+        // valore sarà uguale al primo elemento dell'array, poi al secondo, e così via.
+            somma += valore; // valore corrente + totale
+            
         }
 
-        return somma;
+        return somma; //somma
     }
 }

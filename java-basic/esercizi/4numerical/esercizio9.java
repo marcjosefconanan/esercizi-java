@@ -2,15 +2,20 @@
 
 public class esercizio9 {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
+        int a = 5;
+        int b = 10;
+        int c = 1;
+        Multiplicazione(a, b, c);
 
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+    }
 
-        int mult = (a * b );
+    public static int Multiplicazione(int a, int b, int c) {
+        int result = (a+c) * (b+c);
 
-        System.out.println("The multipication is: " + mult);
+        System.out.println("result: " + result);
+        return result;
+
+
     }
 }
 

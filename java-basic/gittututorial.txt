@@ -1,0 +1,83 @@
+mkdir = make a new folder 
+
+cd = get acess tht folder
+
+touch = is to add something to tht folder (ex: touch indexx.html app.css)
+
+git init = this is like when you put a memory card in ur pc 
+
+git add . = save all (95% U USE THISS!!!!!!!!!) mini save point
+
+or 
+
+git add index.html = save a specific something. mini save point    
+
+git commit = thi is the full save 
+
+but a more right ways is 
+
+git commit -m "discribe what you change or did" - full save with name. 
+
+ rm = is delete a file. 
+
+ clear = clear the terminal. 
+
+ git log = let's us see all our saves.
+
+ git checkout (name of the file or branch or previus branch) 
+ex: (git checkout main)
+
+now how to put your code to github. 
+
+1. u make a github acc 
+
+2. u make a repo (a file in Github)
+
+3.if u don't have a file yet THEN MAKE ONE !! 
+if ur good and u listend to me put this into your new file.
+
+4.a git remote add origin https://github.com/.... = this a command to hook up ur local file to the website. 
+
+OR THIS : 
+
+4.b echo "# gitVideo" >> README.dashboard
+
+5.b git init 
+
+6.b add REAME.md 
+
+7.b git commit -m "first commit"
+
+8.b git branch -M main
+
+9.b git remote add origin https://github.com/....
+
+10b git push -u orinin main 
+
+NW GETTING BACK AT IT.. 
+
+4. git push -u (name of the branch u want to push in) = u push ur things to the internet AKA to github.
+
+NOW BRANCHES
+branches are make so that u dont duck up the main one where u only live the best clean code u have 
+then u put the experiments the garbage in ur branch.
+clean it up then when its ultra clean and fresh its worthy to be put in the main branch.
+
+
+
+5. checkout -b (name of the new branch u want to make.) = this is how u make new branches 
+
+6. git branch = let's you check all the branch u have. 
+
+7. ls = lets you check all of the files u have in that branch. 
+
+8. push origin (name of the branch) = this lets you push a branch to Github. 
+
+9. git pull origin (name of the branch) = this lets you get an updated version of that github file in your 
+    local computer. 
+
+    ex: git pull origin main 
+
+10. 
+
+
