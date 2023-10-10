@@ -1,4 +1,4 @@
-//while loops. 
+/*while loops.
 
  //what is a loop ? 
 

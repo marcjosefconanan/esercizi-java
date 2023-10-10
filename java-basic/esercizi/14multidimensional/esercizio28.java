@@ -9,48 +9,40 @@
  //3 6
 
  public class esercizio28 {
-    public static void main(String[] args) {
-        int[][] matrix = {{1, 2, 3},{4, 5, 6}};
+     public static void main(String[] args) {
+         int[][] matrice = {{1, 2, 3}, {4, 5, 6}};
 
-        
-        System.out.println("matrix di partenza:");
-        stampamatrix(matrix); 
+         System.out.println("matrice di partenza: ");
+         stampaMatrice(matrice);
 
-        int[][] matrixScambiata = scambiaRigheConColonne(matrix); 
-.
-        System.out.println("matrix risultato:");
+         int[][] matriceScambiata = switchRigheColonne(matrice);
 
-        stampamatrix(matrixScambiata);
-    }
+         System.out.println("Matrice risultato:");
+         stampaMatrice(matriceScambiata);
+     }
+     public static int[][] switchRigheColonne(int [][] matrice){
 
-    public static int[][] scambiaRigheConColonne(int[][] matrix) {
+         int righe = matrice.length;
+         int colonne = matrice[0]. length;
 
-        // Ottieni il numero di righe e colonne.
-        int righe = matrix.length;
-        int colonne = matrix[0].length;
+         int [][] nuovoMatrice = new int [colonne][righe];
 
-        // nuova matrix con colonne e righe scambiate
-        int[][] matrixScambiata = new int[colonne][righe];
+         for (int i=0;i < righe; i++){
+             for (int j = 0; j < colonne; j++){
+                 nuovoMatrice[j][i] = matrice[i][j];
+             }
+         }
 
-        // Scambia righe con colonne.
-        for (int i = 0; i < righe; i++) {
-            for (int j = 0; j < colonne; j++) {
-                matrixScambiata[j][i] = matrix[i][j]; 
-            }
-        }
+         return nuovoMatrice;
+     }
 
-        //la matrice scambiata.
-        return matrixScambiata; 
-    }
-
-    public static void stampamatrix(int[][] matrix) {
-        for (int[] riga : matrix) { //for each 
-            //ripete attraverso le righe della matrice
-            for (int elemento : riga) {
-            //  ripete attraverso gli elementi della riga 
-                System.out.print(elemento + " "); 
-            } 
-            System.out.println(); 
-        }
-    }
+     public  static void  stampaMatrice(int[][] matrice){
+         for (int[] riga: matrice) {
+             for (int element : riga) {
+                 System.out.print(element + "");
+             }
+             System.out.println();
+         }
+     }
 }
+

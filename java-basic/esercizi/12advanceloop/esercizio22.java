@@ -3,7 +3,7 @@
 
 public class esercizio22 {
     public static void main(String[] args) {
-        int valore = 8; // Cambia questo valore per vedere l'output con un limite diverso
+        int valore = 8;
         stampaNumeri(valore);
     }
 

@@ -1,4 +1,4 @@
-//FOR LOOP
+/*FOR LOOP
 
 //for loop is the most fav of loops cuz u see them in many other languages
 // and its used very often. 
