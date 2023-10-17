@@ -1,17 +1,17 @@
 class CharFinder {
-    public final String inputString;
+    public String inputString;
 
     public CharFinder(String inputString) {
-        this.inputString = inputString;
+        this.inputString = inputString; // Initializes the inputString field with the value passed to the constructor.
     }
 
     public String findCharacter(int index) {
-        StringBuilder result = new StringBuilder();
+        StringBuilder result = new StringBuilder(); // Creates a StringBuilder to build the result string.
 
         if (index < 0 || index >= inputString.length()) {
-            result.append("Error");
+            result.append("Errore"); // dice "Errore" se resulta out of bounds.
         } else {
-            char character = inputString.charAt(index);
+            char character = inputString.charAt(index); // riprende il char
             result.append("Il carattere in posizione ").append(index).append(" è '").append(character).append("'");
         }
 

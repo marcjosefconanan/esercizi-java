@@ -12,10 +12,11 @@ public class Main {
         Rettangolo rettangolo = new Rettangolo(1.0, 2.0);
         Triangolo triangolo = new Triangolo(1.0, 2.0, 3.0);
 
-        Forma[] shapes = {triangolo, rettangolo};
+        Forma[] shapes = {rettangolo, triangolo};
 
-        for (Forma x : shapes){
-            x.calcoloArea();
+        for (Forma x : shapes) {
+            double area = x.calcolaArea();
+            System.out.println("L'area è: " + area);
         }
     }
 }

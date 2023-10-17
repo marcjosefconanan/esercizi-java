@@ -1,4 +1,3 @@
- public interface Forma {
-
-   void calcoloArea();
+public abstract class Forma {
+   abstract double calcolaArea(); // cambiato void a double
 }

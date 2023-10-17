@@ -1,17 +1,18 @@
-public class Triangolo implements Forma {
+public class Triangolo extends Forma {
 
-    private double  x;
-    private double  y;
-    private double  z;
+    private double base;
+    private double altezza;
+    private double lato;
 
-    public Triangolo (double x,double y, double z){
-        this.x = x;
-        this.y = y;
-        this.z = z;
+    public Triangolo(double base, double altezza, double lato) {
+        this.base = base;
+        this.altezza = altezza;
+        this.lato = lato;
     }
+
     @Override
-    public void calcoloArea(){
-        double area = x * y / z;
-        System.out.println("area del Rettangolo è:" + area);
+    double calcolaArea() { // cambiato void a double.
+        return (base * altezza) / 2; // in questo modo ?
+        // cambiato x,y,z
     }
 }

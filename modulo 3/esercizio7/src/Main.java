@@ -6,10 +6,9 @@
 
 public class Main {
     public static void main(String[] args) {
+        CharFinder finder = new CharFinder("Ciao!"); //"provo testo ".
 
-        UniFinder finder = new UniFinder("Ciao, mondo!");
-
-        System.out.println(finder.findCharacter(4)); // Stampa il carattere in posizione 4
-        System.out.println(finder.findCharacter(12)); // (indice non valido)
+        System.out.println(finder.findCharacter(4));
+        System.out.println(finder.findCharacter(12));
     }
 }

@@ -1,15 +1,15 @@
-public class Rettangolo implements Forma{
+public class Rettangolo extends Forma {
 
-    private double x;
-    private double y;
+    private double base;
+    private double altezza;
 
-    public Rettangolo(double x,double y){
-        this.x = x;
-        this.y = y;
+    public Rettangolo(double base, double altezza) {
+        this.base = base;
+        this.altezza = altezza;
     }
+
     @Override
-    public void calcoloArea(){
-        double area = x * y;
-        System.out.println("area del Rettangolo è:" + area);
+    double calcolaArea() { // cambiato void a double
+        return base * altezza; // cambiato x,y
     }
 }

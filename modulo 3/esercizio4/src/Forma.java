@@ -1,4 +1,3 @@
 public abstract class Forma {
-
-    abstract void calcoloArea();
+    abstract double calcolaArea(); // cambiato void a double
 }
