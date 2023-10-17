@@ -6,14 +6,23 @@ public class Car {
     private String brand;
 
 
-    public Car(double engine, String plate, String model, String brand){
+    /*public Car(double engine, String plate, String model, String brand){
         this.setEngine(engine);
         this.setPlate(plate);
         this.setModel(model);
         this.setBrand(brand);
-    }
+    }*/
 
-//questi sono i getters
+    public Car(double engine, String plate, String model, String brand){
+        this.engine = engine;
+        this.plate = plate;
+        this.model = model;
+        this.brand = brand;
+    }
+    //giusto così ? ho assegnato direttamente i valori ai campi all'interno del costruttore
+
+
+    //questi sono i getters
     public String getModel () {
         return model;
     }

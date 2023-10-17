@@ -6,6 +6,19 @@
 
 public class Main {
     public static void main(String[] args) {
+        // Creo un oggetto di tipo Student
+        Student stud = new Student("Marc Josef", "Conanan", 1234567);
+
+        // Stampo le informazioni dello studente accedendo direttamente alle variabili private
+        System.out.println("Name: " + stud.name);
+        System.out.println("Surname: " + stud.surname);
+        System.out.println("ID: " + stud.id);
+    }
+}
+
+
+/*public class Main {
+    public static void main(String[] args) {
         Student Stud = new Student("Marc Josef", "Conanan", 1234567);
 
         System.out.println(Stud);
@@ -13,4 +26,4 @@ public class Main {
 
 
     }
-}
+}*/
