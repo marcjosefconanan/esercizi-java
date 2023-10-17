@@ -54,12 +54,12 @@ OR THIS :
 
 10b git push -u orinin main 
 
-NW GETTING BACK AT IT.. 
+NOW GETTING BACK AT IT.. 
 
 4. git push -u (name of the branch u want to push in) = u push ur things to the internet AKA to github.
 
 NOW BRANCHES
-branches are make so that u dont duck up the main one where u only live the best clean code u have 
+branches are made so that u dont duck up the main one where u only live the best clean code u have 
 then u put the experiments the garbage in ur branch.
 clean it up then when its ultra clean and fresh its worthy to be put in the main branch.
 
