@@ -2,11 +2,11 @@ class CharFinder {
     public String inputString;
 
     public CharFinder(String inputString) {
-        this.inputString = inputString; // Initializes the inputString field with the value passed to the constructor.
+        this.inputString = inputString;
     }
 
     public String findCharacter(int index) {
-        StringBuilder result = new StringBuilder(); // Creates a StringBuilder to build the result string.
+        StringBuilder result = new StringBuilder();
 
         if (index < 0 || index >= inputString.length()) {
             result.append("Errore"); // dice "Errore" se resulta out of bounds.
