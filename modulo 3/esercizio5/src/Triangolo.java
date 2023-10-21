@@ -12,7 +12,11 @@ public class Triangolo extends Forma {
 
     @Override
     double calcolaArea() { // cambiato void a double.
-        return (base * altezza) / 2; // in questo modo ?
-        // cambiato x,y,z
+        return (base * altezza) / 2;
+    }
+
+    @Override
+    String getNome() {
+        return "Triangolo";
     }
 }

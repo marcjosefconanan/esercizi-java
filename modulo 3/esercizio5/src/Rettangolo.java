@@ -10,6 +10,11 @@ public class Rettangolo extends Forma {
 
     @Override
     double calcolaArea() { // cambiato void a double
-        return base * altezza; // cambiato x,y
+        return base * altezza;
+    }
+
+    @Override
+    String getNome() {
+        return "Rettangolo";
     }
 }

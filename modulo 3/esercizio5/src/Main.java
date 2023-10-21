@@ -16,7 +16,9 @@ public class Main {
 
         for (Forma x : shapes) {
             double area = x.calcolaArea();
-            System.out.println("L'area è: " + area);
+            String nome = x.getNome();
+            System.out.println("L'area  " + nome + " è: " + area);
         }
     }
 }
+
