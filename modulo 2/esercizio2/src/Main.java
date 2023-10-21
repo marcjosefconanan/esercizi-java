@@ -8,10 +8,16 @@
 
 public class Main {
     public static void main(String[] args) {
-        Car cars = new Car(5.812,"ab123ab","mustang");
+        Car cars = new Car(5.812, "ab123ab", "mustang");
 
         System.out.println(cars);
-        System.out.println(cars.getPlate());
+        System.out.println("Plate: " + cars.getPlate());
+
+        cars.setEngine(6.000);
+        cars.setPlate("cd456cd");
+        cars.setBrand("ferrari");
+
+        System.out.println(cars);
     }
 }
 
