@@ -28,10 +28,10 @@ public class esercizio28 {
 
         System.out.println("Matrice risultato:");
         stampaMatrice(matriceScambiata);
-        System.out.println(isvalidMatrix(matrice));
+        System.out.println(seMatriceEValido(matrice));
     }
 
-    public static boolean isvalidMatrix(int[][] matrice) { //ho aggiunto questo metodo che controlla se i array nelmatrice sono uguali.
+    public static boolean seMatriceEValido(int[][] matrice) { //ho aggiunto questo metodo che controlla se i array nelmatrice sono uguali.
         boolean flag = false;
         int[] array1 = matrice[0];
         for (int i = 0; i < matrice.length; i++) {
@@ -45,7 +45,7 @@ public class esercizio28 {
     }
 
     public static int[][] switchRigheColonne(int[][] matrice) {
-        if (isvalidMatrix(matrice) == true) {
+        if (seMatriceEValido(matrice) == true) {
 
             int righe = matrice.length;
             int colonne = matrice[0].length;
