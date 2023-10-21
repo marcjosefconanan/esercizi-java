@@ -31,7 +31,7 @@ public class esercizio28 {
         System.out.println(isvalidMatrix(matrice));
     }
 
-    public static boolean isvalidMatrix(int[][] matrice) {
+    public static boolean isvalidMatrix(int[][] matrice) { //ho aggiunto questo metodo che controlla se i array nelmatrice sono uguali.
         boolean flag = false;
         int[] array1 = matrice[0];
         for (int i = 0; i < matrice.length; i++) {
